@@ -124,22 +124,16 @@ Technologies Used
 
 Project Architecture
 
-Developer
-   |
-   v
-GitHub Repository
-   |
-   v
-GitHub Actions (CI/CD)
-   |
-   v
-Python FastAPI Application
-   |
-   v
-Docker Container
-   |
-   v
-REST API Endpoints
+```mermaid
+flowchart TD
+    A["Developer"] --> B["GitHub Repository"]
+    B --> C["GitHub Actions CI/CD"]
+    C --> D["Python Code Validation"]
+    D --> E["Docker Image Build"]
+    E --> F["FastAPI Application"]
+    F --> G["REST API Endpoints"]
+    H["Terraform Configuration"] -. "Future deployment" .-> I["AWS Cloud"]
+```
 
 Features
 
